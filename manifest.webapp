@@ -1,0 +1,13 @@
+{
+    "name": "Flamemo",
+    "description": "Simple Memo app for b2g",
+    "launch_path": "/index.html",
+    "icons": {
+        "128": "/img/icon_128.png"
+    },
+    "developer":{
+        "name": "Yoshikazu Hata",
+        "url": "https://github.com/44ka28ta/Flamemo"
+    },
+    "default_locale": "en"
+}
