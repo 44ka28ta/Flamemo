@@ -1,8 +1,113 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flamemo</title>
+        <meta name="description" content="Simple memopad for b2g">
 
-<meta charset=UTF-8>
-<title>Flamemo</title>
-<h1>Simple Memopad for b2g</h1>
-<p>
-    Test
-</p>
+        <!-- gaia drawer csses -->
+        <link rel="stylesheet" href="./css/drawer.css" type="text/css">
+        <link rel="stylesheet" href="./css/headers.css" type="text/css">
+        <!-- gaia list ui css -->
+        <link rel="stylesheet" href="./css/lists.css" type="text/css">
+        <!-- gaia input_areas ui css -->
+        <link rel="stylesheet" href="./css/input_areas.css" type="text/css">
+        <!-- gaia edit_mode ui css -->
+        <link rel="stylesheet" href="./css/buttons.css" type="text/css">
+        <!-- custom css -->
+        <link rel="stylesheet" href="./css/custom.css" type="text/css">
+
+    </head>
+    <body role="application" class="skin-dark">
+        <section data-type="sidebar" role="region">
+            <!--            <form data-type="edit" role="dialog">-->
+            <header>
+
+                    <a href="#">
+                <button>
+                        <span class="icon icon-close">close</span>
+                </button>
+                    </a>
+                <!-- icon button in drawer.css the 82-th line -->
+                <menu type="toolbar">
+                    <a href="#">
+                    <button>
+                        done
+                    </button>
+                    </a>
+                        <!--<a href="#"><span class="icon icon-add">add</span></a>-->
+                </menu>
+                <h1>Configuration</h1>
+            </header>
+            <!-- sidebar margin change in drawer.css the 149-th line -->
+            <!-- sidebar scroll enable in input_areas.css the 4-th line -->
+
+            <nav>
+                <h2 class="bb-docs">Storage Directory Path</h2>
+                <form>
+                <p>
+                <input type="text" placeholder="Placeholder"></input>
+                <button type="reset">Clear</button>
+                </p>
+                </form>
+<!--                <ul>
+                    <li>
+                        <a href="#content">label</a>
+                    </li>
+                    <li>
+                        <a href="#content">label</a>
+                    </li>
+                    </ul>-->
+            </nav>
+            <!--</form>-->
+        </section>
+        <section id="drawer" role="region">
+            <header>
+                <!-- icon button in headers.css the 48-th line -->
+                <a href="#"><span class="icon icon-menu">hide sidebar</span></a>
+                <a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
+                <menu type="toolbar">
+                    <button><span class="icon icon-add">add</span></button>
+                </menu>
+                <h1>Flamemo</h1>
+            </header>
+            <section data-type="list" role="main">
+                <header>
+                </header>
+                <ul>
+                    <li id="doc1-item">
+                        <a href="#editor">
+                            <p>New Document1</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+
+        <form role="dialog" data-type="edit" id="editor">
+            <section role="region" class="skin-dark">
+                <header>
+                    <a href="#">
+                        <button><span class="icon icon-close">close</span></button>
+                    </a>
+                    <menu type="toolbar">
+                        <a href="#">
+                            <button>done</button>
+                        </a>
+                    </menu>
+                    <h1>Edit</h1>
+                </header>
+                <p>
+                    <textarea placeholder="Foobar" required=""></textarea>
+                </p>
+
+            </section>
+            <menu>
+                <button>Delete</button>
+            </menu>
+
+        </form>
+
+    </body>
+</html>
