@@ -17,23 +17,21 @@
         <!-- custom css -->
         <link rel="stylesheet" href="./css/custom.css" type="text/css">
 
+
+        <script src="./dist/js/jquery-2.1.1.min.js"></script>
+        <script src="./dist/js/app.min.js"></script>
+
     </head>
     <body role="application" class="skin-dark">
         <section data-type="sidebar" role="region">
-            <!--            <form data-type="edit" role="dialog">-->
             <header>
-
-                    <a href="#">
-                <button>
-                        <span class="icon icon-close">close</span>
-                </button>
-                    </a>
+                <a href="#">
+                    <span class="icon icon-close">close</span>
+                </a>
                 <!-- icon button in drawer.css the 82-th line -->
                 <menu type="toolbar">
-                    <a href="#">
-                    <button>
+                    <a id="done-button" href="#">
                         done
-                    </button>
                     </a>
                         <!--<a href="#"><span class="icon icon-add">add</span></a>-->
                 </menu>
@@ -59,7 +57,6 @@
                     </li>
                     </ul>-->
             </nav>
-            <!--</form>-->
         </section>
         <section id="drawer" role="region">
             <header>
@@ -67,14 +64,14 @@
                 <a href="#"><span class="icon icon-menu">hide sidebar</span></a>
                 <a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
                 <menu type="toolbar">
-                    <button><span class="icon icon-add">add</span></button>
+                    <button id="add-button"><span class="icon icon-add">add</span></button>
                 </menu>
                 <h1>Flamemo</h1>
             </header>
             <section data-type="list" role="main">
                 <header>
                 </header>
-                <ul>
+                <ul id="memo-list">
                     <li id="doc1-item">
                         <a href="#editor">
                             <p>New Document1</p>
@@ -88,12 +85,12 @@
         <form role="dialog" data-type="edit" id="editor">
             <section role="region" class="skin-dark">
                 <header>
-                    <a href="#">
-                        <button><span class="icon icon-close">close</span></button>
+                    <a id="edit-cancel-button" href="#">
+                        <span class="icon icon-close">close</span>
                     </a>
                     <menu type="toolbar">
                         <a href="#">
-                            <button>done</button>
+                            <span id="edit-done-button">done</span>
                         </a>
                     </menu>
                     <h1>Edit</h1>
@@ -104,7 +101,9 @@
 
             </section>
             <menu>
-                <button>Delete</button>
+                <a id="edit-delete-button" class="bb-button" href="#">
+                    Delete
+                </a>
             </menu>
 
         </form>
