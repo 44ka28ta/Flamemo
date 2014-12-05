@@ -1,0 +1,40 @@
+{
+  "name": "Flamemo",
+  "version": "0.1.0",
+  "description": "A simple notepad for B2G",
+  "main": "Gruntfile.coffee",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-sass": "~0.6.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-yuidoc": "~0.5.2",
+    "grunt-notify": "~0.2.20",
+    "grunt-typescript": "~0.2.9",
+    "matchdep": "~0.3.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-sass": "~0.6.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-yuidoc": "~0.5.2",
+    "grunt-notify": "~0.2.20",
+    "grunt-typescript": "~0.2.9",
+    "matchdep": "~0.3.0"
+  },
+  "scripts": {
+    "test": "grunt watch",
+    "preinstall": "npm install -g grunt-cli"
+  },
+  "config": {
+    "unsafe-perm": true
+  },
+  "author": "Yoshikazu Hata",
+  "license": "BSD-2-Clause"
+}
